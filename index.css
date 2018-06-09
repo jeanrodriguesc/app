@@ -44,3 +44,7 @@ body {
   padding: 1em;
   list-style: none;
 }
+
+.list li:not(:first-child) {
+  margin-top: .5em;
+}
