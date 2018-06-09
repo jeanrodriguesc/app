@@ -6,22 +6,12 @@
     <script src="index.js"></script>
     <link href="index.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="loadProductList()">
     <div class="right">R$ 200,00</div>
     <div class="app">
       <div class="container">
-        <input class="search" placeholder="Buscar">
-        <ul class="list">
-          <li>Arroz</li>
-          <li>Feijão</li>
-          <li>Carne</li>
-          <li>Frango</li>
-          <li>Leite</li>
-          <li>Suco</li>
-          <li>bolacha</li>
-          <li>pão</li>
-          <li>queijo</li>
-        </ul>
+        <input class="search" placeholder="Buscar" onkeyup="onSearchChange(this)">
+        <ul class="list"></ul>
       </div>
     </div>
   </body>
