@@ -35,7 +35,7 @@ function loadProductList() {
   })
 }
 
-var listFornecedor = [
+var listProvider = [
   'João',
   'Lucas',
   'Thiago',
@@ -46,24 +46,24 @@ var listFornecedor = [
   'Jesus'
   ];
 
-function loadFornecedorname() {
-  var forn = document.querySelector('.forn');
-  listFornecedor.forEach(function (n) {
+function loadProviderName() {
+  var list = document.querySelector('.list');
+  listProvider.forEach(function (n) {
     var item = document.createElement('li');
     item.innerText = n;
-    forn.appendChild(item)
+    list.appendChild(item)
   })
 }
 
-function buscarFornecedor(e) {
-  var buscar = e.value.toLowerCase();
-  var forn = document.querySelector('.forn');
-  forn.innerHTML = '';
-  listFornecedor.forEach(function (n) {
-    if (n.toLowerCase().startsWith(buscar)) {
+function buscarProvider(e) {
+  var search = e.value.toLowerCase();
+  var list = document.querySelector('.list');
+  list.innerHTML = '';
+  listProvider.forEach(function (n) {
+    if (n.toLowerCase().startsWith(search)) {
       var item = document.createElement('li');
       item.innerText = n;
-      forn.appendChild(item)
+      list.appendChild(item)
     }
   })
 }
