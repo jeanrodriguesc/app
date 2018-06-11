@@ -67,3 +67,23 @@ function buscarProvider(e) {
     }
   })
 }
+
+var historic = [
+  'Arroz',
+  'Feijao',
+  'Açucar',
+  'Alface',
+  'Amedoim',
+  'Carne',
+  'Bolacha',
+  'Suco'
+  ];
+
+function history() {
+  var list = document.querySelector('.list');
+  historic.forEach(function (n) {
+    var item = document.createElement('li');
+    item.innerText = n;
+    list.appendChild(item)
+  })
+}

@@ -45,6 +45,12 @@ body {
   background-color: transparent;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  width: 49%;
+}
+
 .list {
   padding: 1em;
   list-style: none;
