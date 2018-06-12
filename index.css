@@ -55,6 +55,7 @@ body {
   padding: 1em;
   list-style: none;
 }
+
 .list li {
   text-transform: capitalize;
 }
@@ -64,10 +65,10 @@ body {
 }
 
 .canvas {
-      width: 13em;
-      height: 100%;
-      position: absolute;
-      background: #438bca;
-      padding: 25px;
-      color: #fff;
+  width: 13em;
+  height: 100%;
+  position: absolute;
+  background: #438bca;
+  padding: 25px;
+  color: #fff;
 }

@@ -44,7 +44,7 @@ var listProvider = [
   'Judas',
   'Pedro',
   'Jesus'
-  ];
+];
 
 function loadProviderName() {
   var list = document.querySelector('.list');
@@ -77,7 +77,7 @@ var historic = [
   'Carne',
   'Bolacha',
   'Suco'
-  ];
+];
 
 function history() {
   var list = document.querySelector('.list');
