@@ -67,4 +67,7 @@ body {
       width: 13em;
       height: 100%;
       position: absolute;
+      background: #438bca;
+      padding: 25px;
+      color: #fff;
 }
