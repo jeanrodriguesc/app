@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: silver;
+  background: #f2f2f2;
   font-family: sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .search, .list {
-  border: 3px solid #FFF;
+  border: 2px solid #ccc;
   border-radius: 8px;
 }
 
