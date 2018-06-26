@@ -146,17 +146,6 @@ nav a {
   box-sizing: border-box;
 }
 
-.f {
-  width: 100%;
-  padding: 40px;
-}
-
-@media (min-width: 769px) {
-  .f {
-    width: 50%;
-  }
-}
-
 h3 {
   display: flex;
   justify-content: center;
