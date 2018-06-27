@@ -23,14 +23,20 @@ body {
 
 .app {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 50%;
+  margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .search, .list {
