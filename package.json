@@ -1,6 +1,9 @@
 {
   "name": "aprendendo-html",
   "version": "0.0.1",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeanrodriguesc/app.git"
@@ -10,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/jeanrodriguesc/app/issues"
   },
-  "homepage": "https://github.com/jeanrodriguesc/app#readme"
+  "homepage": "https://github.com/jeanrodriguesc/app#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
 }

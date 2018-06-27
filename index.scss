@@ -60,14 +60,14 @@ body {
 .list {
   padding: 1em;
   list-style: none;
-}
 
-.list li {
-  text-transform: capitalize;
-}
+  li {
+    text-transform: capitalize;
 
-.list li:not(:first-child) {
-  margin-top: .5em;
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
+  }
 }
 
 #check {
@@ -98,10 +98,10 @@ body {
   background-color: #222;
   overflow: hidden;
   transition: all .2s;
-}
 
-nav a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 .link {
@@ -114,10 +114,10 @@ nav a {
   border-bottom: 2px solid #222;
   opacity: 0;
   margin-top: 200px;
-}
 
-.link:hover {
-  background-color: #050542;
+  &:hover {
+    background-color: #050542;
+  }
 }
 
 #check:checked ~ .barra {
