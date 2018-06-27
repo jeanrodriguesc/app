@@ -1,0 +1,14 @@
+{
+  "name": "aprendendo-html",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanrodriguesc/app.git"
+  },
+  "author": "Jean Rodrigues <jeanrodrigues002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeanrodriguesc/app/issues"
+  },
+  "homepage": "https://github.com/jeanrodriguesc/app#readme"
+}
