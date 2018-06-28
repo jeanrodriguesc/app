@@ -32,7 +32,7 @@ gulp.task('images', function () {
     .pipe(gulp.dest(final));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['sass', 'html', 'js', 'images'], function () {
   gulp.watch('./src/*.scss', ['sass']);
   gulp.watch('./src/*.html', ['html']);
   gulp.watch('./src/*.js', ['js']);
