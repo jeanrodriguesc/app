@@ -14,6 +14,10 @@
     "url": "https://github.com/jeanrodriguesc/app/issues"
   },
   "homepage": "https://github.com/jeanrodriguesc/app#readme",
+  "engines": {
+    "npm": "6.1.0",
+    "node": "8.5.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
