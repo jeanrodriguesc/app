@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const htmlclean = require('gulp-htmlclean');
+const imagemin = require('gulp-imagemin');
 
 const final = './final';
 
@@ -27,6 +28,7 @@ gulp.task('js', function () {
 
 gulp.task('images', function () {
   return gulp.src('./src/*.png')
+    .pipe(imagemin())
     .pipe(gulp.dest(final));
 });
 
