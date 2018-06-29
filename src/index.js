@@ -5,6 +5,8 @@ fetch('/produtos').then(function (response) {
 })
   .then(function (products) {
     productList.length = 0;
+    historic.length = 0;
+    listProvider.length = 0;
     products.forEach(function (product) {
       productList.push(product)
     });
