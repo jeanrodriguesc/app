@@ -1,17 +1,15 @@
-var productList = [
-  'Arroz',
-  'Feijão',
-  'Carne',
-  'Frango',
-  'Alface',
-  'Amendoim',
-  'Laranja',
-  'Leite',
-  'Suco',
-  'bolacha',
-  'pão',
-  'queijo'
-];
+var productList = [];
+
+fetch('/produtos').then(function (response) {
+  return response.json()
+})
+  .then(function (products) {
+    productList.length = 0;
+    products.forEach(function (product) {
+      productList.push(product)
+    });
+    loadProductList()
+  });
 
 function onSearchChange(element) {
   var search = element.value.toLowerCase();
