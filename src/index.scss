@@ -84,7 +84,7 @@ body {
 }
 
 .barra {
-  background-color: #333;
+  background-color: #222;
   height: 100%;
   width: 300px;
   position: absolute;
@@ -118,7 +118,7 @@ body {
   margin-top: 200px;
 
   &:hover {
-    background-color: #050542;
+    background-color: #222;
   }
 }
 
@@ -202,8 +202,10 @@ ul {
   color: #fff;
   border: 0;
   cursor: pointer;
-  position: relative;
-  left: 250px;
+  position: absolute;
+  left: 500px;
+top: 20px;
+
 }
 
 .button:hover {
