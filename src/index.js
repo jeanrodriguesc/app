@@ -109,3 +109,13 @@ function outsideClick(e) {
     modal.style.display = 'none';
   }
 }
+
+function enviarDados() {
+  var nome = document.getElementById("nome");
+  var email = document.getElementById("email");
+  var telefone = document.getElementById("telefone");
+  var celular = document.getElementById("celular");
+  var anotacoes = document.getElementById("anotacoes");
+
+  alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
+}
