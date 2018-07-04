@@ -5,8 +5,6 @@ fetch('/produtos').then(function (response) {
 })
   .then(function (products) {
     productList.length = 0;
-    historic.length = 0;
-    listProvider.length = 0;
     products.forEach(function (product) {
       productList.push(product)
     });
@@ -35,7 +33,7 @@ function loadProductList() {
   })
 }
 
-var listProvider = [
+var listaProvider = [
   'João',
   'Lucas',
   'Thiago',
@@ -47,23 +45,23 @@ var listProvider = [
 ];
 
 function loadProviderName() {
-  var list = document.querySelector('.list');
-  listProvider.forEach(function (n) {
+  var lista = document.querySelector('.lista');
+  listaProvider.forEach(function (n) {
     var item = document.createElement('li');
     item.innerText = n;
-    list.appendChild(item)
+    lista.appendChild(item)
   })
 }
 
 function buscarProvider(e) {
   var search = e.value.toLowerCase();
-  var list = document.querySelector('.list');
-  list.innerHTML = '';
-  listProvider.forEach(function (n) {
+  var lista = document.querySelector('.lista');
+  lista.innerHTML = '';
+  listaProvider.forEach(function (n) {
     if (n.toLowerCase().startsWith(search)) {
       var item = document.createElement('li');
       item.innerText = n;
-      list.appendChild(item)
+      lista.appendChild(item)
     }
   })
 }
@@ -80,11 +78,11 @@ var historic = [
 ];
 
 function history() {
-  var list = document.querySelector('.list');
+  var lista = document.querySelector('.lista');
   historic.forEach(function (n) {
     var item = document.createElement('li');
     item.innerText = n;
-    list.appendChild(item)
+    lista.appendChild(item)
   })
 }
 
