@@ -110,12 +110,31 @@ function outsideClick(e) {
   }
 }
 
-function enviarDados() {
-  var nome = document.getElementById("nome");
-  var email = document.getElementById("email");
-  var telefone = document.getElementById("telefone");
-  var celular = document.getElementById("celular");
-  var anotacoes = document.getElementById("anotacoes");
+function enviarDados(){
+  var nome = document.getElementById("nome").value;
+  var email = document.getElementById("email").value;
+  var telefone = document.getElementById("telefone").value;
+  var celular = document.getElementById("celular").value;
+  var anotacoes = document.getElementById("anotacoes").value;
 
-  alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
+  if(nome.length < 3 || nome.length > 30)
+    alert('Tamanho do nome invalido');
+  else{
+    if(email.length < 0 || email.length > 50)
+      alert('Email invalido');
+    else{
+      if(telefone <= 0)
+        alert('Telefone invalido');
+      else{
+        if(celular <= 0)
+          alert('Celular invalido');
+        else{
+          if(anotacoes.length < 0 )
+            alert('Sem anotações');
+          else
+            alert('Cadastro realizado com sucesso\nNome: '+nome + '\nEmail: '+email+ '\nTelefone: '+telefone + '\nCelular: '+celular + '\nAnotações: '+anotacoes);
+        }
+      }
+    }
+  }
 }

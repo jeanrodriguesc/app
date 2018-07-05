@@ -41,24 +41,28 @@
     <h3>Cadastro Cliente</h3>
     <div class="app">
       <div class="container">
-        <label>
-          Nome <input class="input" placeholder="Nome do cliente.." id="nome">
-        </label>
-        <label>
-          Email <input class="input" placeholder="Email do cliente.." id="email">
-        </label>
-        <label>
-          Telefone <input class="input" placeholder="Telefone do cliente.." id="telefone" >
-        </label>
-        <label>
-          Celular <input class="input" placeholder="Telefone movel do cliente.." id="celular">
-        </label>
-        <label>
-          Anotações <input class="input" placeholder="Anotações sobre o cliente.." id="anotacoes">
-        </label>
-        <label>
-          <input type="submit" value="Enviar Dados" onsubmit="enviarDados();" class="m">
-        </label>
+        <form onsubmit="return enviarDados();">
+          <table>
+          <label>
+            Nome <input class="input" placeholder="Nome do cliente.." id="nome">
+          </label>
+          <label>
+            Email <input class="input" placeholder="Email do cliente.." id="email">
+          </label>
+          <label>
+            Telefone <input class="input" placeholder="Telefone do cliente.." id="telefone" >
+          </label>
+          <label>
+            Celular <input class="input" placeholder="Telefone movel do cliente.." id="celular">
+          </label>
+          <label>
+            Anotações <input class="input" placeholder="Anotações sobre o cliente.." id="anotacoes">
+          </label>
+          <label>
+            <input type="submit" value="Enviar Dados" class="m">
+          </label>
+          </table>
+        </form>
       </div>
     </div>
   </body>
