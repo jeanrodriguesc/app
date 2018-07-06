@@ -110,29 +110,63 @@ function outsideClick(e) {
   }
 }
 
-function enviarDados(){
+function enviarDados() {
   var nome = document.getElementById("nome").value;
   var email = document.getElementById("email").value;
   var telefone = document.getElementById("telefone").value;
   var celular = document.getElementById("celular").value;
   var anotacoes = document.getElementById("anotacoes").value;
 
-  if(nome.length < 3 || nome.length > 30)
+  if (nome.length < 3 || nome.length > 30)
     alert('Tamanho do nome invalido');
-  else{
-    if(email.length < 0 || email.length > 50)
+  else {
+    if (email.length < 0 || email.length > 50)
       alert('Email invalido');
-    else{
-      if(telefone <= 0)
+    else {
+      if (telefone <= 0)
         alert('Telefone invalido');
-      else{
-        if(celular <= 0)
+      else {
+        if (celular <= 0)
           alert('Celular invalido');
-        else{
-          if(anotacoes.length < 0 )
+        else {
+          if (anotacoes.length < 0)
             alert('Sem anotações');
           else
-            alert('Cadastro realizado com sucesso\nNome: '+nome + '\nEmail: '+email+ '\nTelefone: '+telefone + '\nCelular: '+celular + '\nAnotações: '+anotacoes);
+            alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
+        }
+      }
+    }
+  }
+}
+
+function enviarDados2() {
+  var nome = document.getElementById("nome").value;
+  var email = document.getElementById("email").value;
+  var telefone = document.getElementById("telefone").value;
+  var celular = document.getElementById("celular").value;
+  var endereco = document.getElementById("endereco").value;
+  var observacao = document.getElementById("observacao").value;
+
+  if (nome.length < 3 || nome.length > 30)
+    alert('Tamanho do nome invalido');
+  else {
+    if (email.length < 0 || email.length > 50)
+      alert('Email invalido');
+    else {
+      if (telefone <= 0)
+        alert('Telefone invalido');
+      else {
+        if (celular <= 0)
+          alert('Celular invalido');
+        else {
+          if (endereco.length === 0)
+            alert('Sem Endereco');
+          else {
+            if (observacao.length === 0)
+              alert('Sem Observaçao');
+            else
+              alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao);
+          }
         }
       }
     }
