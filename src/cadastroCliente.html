@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Cliente</title>
-    <link href="index.css" rel="stylesheet">
-  </head>
-  <body>
-  <!----------------------------------------------------- Barra do menu ------------------------------------------------------------------->
-    <input type="checkbox" id="check">
-    <label id="icone" for="check"><img src="icone.png"></label>
-    <div class="bg"></div>
-    <div class="barra">
-      <nav class="nav">
-        <a href="index.html">
-          <div class="link">Home Page</div>
-        </a>
-        <a href="fornecedor.html">
-          <div class="link">Fornecedor</div>
-        </a>
-        <a href="historico.html">
-          <div class="link">Historico</div>
-        </a>
-        <a href="#cadastro">
-          <div class="link">Cadastro <span>+</span></div>
-        </a>
-        <a href="estoque.html">
-          <div class="link">Estoque</div>
-        </a>
-      </nav>
-      <nav class="nav" id="cadastro">
-        <ul>
-          <li><a href="cadastroCliente.html">Cliente</a></li>
-          <li><a href="cadastroFornecedor.html">Fornecedor</a></li>
-          <li><a href="cadastroProduto.html">Produto</a></li>
-        </ul>
-      </nav>
-    </div>
-  <!----------------------------------------------- Corpo do html (input's) -------------------------------------------------------------->
-    <h3>Cadastro Cliente</h3>
-    <div class="app">
-      <div class="container">
-        <form onsubmit="return enviarDados();">
-          <table>
-          <label>
-            Nome <input class="input" placeholder="Nome do cliente.." id="nome">
-          </label>
-          <label>
-            Email <input class="input" placeholder="Email do cliente.." id="email">
-          </label>
-          <label>
-            Telefone <input class="input" placeholder="Telefone do cliente.." id="telefone" >
-          </label>
-          <label>
-            Celular <input class="input" placeholder="Telefone movel do cliente.." id="celular">
-          </label>
-          <label>
-            Anotações <input class="input" placeholder="Anotações sobre o cliente.." id="anotacoes">
-          </label>
-          <label>
-            <input type="submit" value="Enviar Dados" class="m">
-          </label>
-          </table>
-        </form>
-      </div>
-    </div>
-  <script src="index.js"></script>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Cliente</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<!----------------------------------------------------- Barra do menu ------------------------------------------------------------------->
+<input type="checkbox" id="check">
+<label id="icone" for="check"><img src="icone.png"></label>
+<div class="bg"></div>
+<div class="barra">
+  <nav class="nav">
+    <a href="index.html">
+      <div class="link">Home Page</div>
+    </a>
+    <a href="fornecedor.html">
+      <div class="link">Fornecedor</div>
+    </a>
+    <a href="historico.html">
+      <div class="link">Historico</div>
+    </a>
+    <a href="#cadastro">
+      <div class="link">Cadastro <span>+</span></div>
+    </a>
+    <a href="estoque.html">
+      <div class="link">Estoque</div>
+    </a>
+  </nav>
+  <nav class="nav" id="cadastro">
+    <ul>
+      <li><a href="cadastroCliente.html">Cliente</a></li>
+      <li><a href="cadastroFornecedor.html">Fornecedor</a></li>
+      <li><a href="cadastroProduto.html">Produto</a></li>
+    </ul>
+  </nav>
+</div>
+<!----------------------------------------------- Corpo do html (input's) -------------------------------------------------------------->
+<h3>Cadastro Cliente</h3>
+<div class="app">
+  <div class="container">
+    <form onsubmit="return enviarDados();">
+        <label>
+          Nome <input class="input" placeholder="Nome do cliente.." id="nome">
+        </label>
+        <label>
+          Email <input class="input" placeholder="Email do cliente.." id="email">
+        </label>
+        <label>
+          Telefone <input class="input" placeholder="Telefone do cliente.." id="telefone">
+        </label>
+        <label>
+          Celular <input class="input" placeholder="Telefone movel do cliente.." id="celular">
+        </label>
+        <label>
+          Anotações <input class="input" placeholder="Anotações sobre o cliente.." id="anotacoes">
+        </label>
+        <label>
+          <input type="submit" value="Enviar Dados" class="m">
+        </label>
+    </form>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
 </html>
