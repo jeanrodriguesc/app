@@ -174,7 +174,7 @@ function enviarDados2() {
   }
 }
 
-function enviarDados2() {
+function enviarDados3() {
   var codigoProduto = document.getElementById("codigoProduto").value;
   var nomeProduto = document.getElementById("nomeProduto").value;
   var precoCompra = document.getElementById("precoCompra").value;
@@ -188,7 +188,7 @@ function enviarDados2() {
     if (nomeProduto.length < 0 || nomeProduto.length > 50)
       alert('Nome do produto invalido');
     else {
-      if (preco <= 0)
+      if (precoCompra <= 0)
         alert('Preço de compra invalido');
       else {
         if (precoVenda <= 0)
