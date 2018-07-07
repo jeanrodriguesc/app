@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Produto</title>
-    <link href="index.css" rel="stylesheet">
-  </head>
-  <body>
-    <input type="checkbox" id="check">
-    <label id="icone" for="check"><img src="icone.png"></label>
-    <div class="bg"></div>
-    <div class="barra">
-      <nav class="nav">
-        <a href="index.html">
-          <div class="link">Home Page</div>
-        </a>
-        <a href="fornecedor.html">
-          <div class="link">Fornecedor</div>
-        </a>
-        <a href="historico.html">
-          <div class="link">Historico</div>
-        </a>
-        <a href="#cadastro">
-          <div class="link">Cadastro <span>+</span></div>
-        </a>
-        <a href="estoque.html">
-          <div class="link">Estoque</div>
-        </a>
-      </nav>
-      <nav class="nav" id="cadastro">
-        <ul>
-          <li><a href="cadastroCliente.html">Cliente</a></li>
-          <li><a href="cadastroFornecedor.html">Fornecedor</a></li>
-          <li><a href="cadastroProduto.html">Produto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <h3>Cadastro Produto</h3>
-    <div class="app">
-      <div class="container">
-        <form onsubmit="return enviarDados3();">
-        <label>
-          Codigo do produto <input class="input" placeholder="Codigo do produto.." id="codigoProduto">
-        </label>
-        <label>
-          Nome do Produto <input class="input" placeholder="Nome do produto.." id="nomeProduto">
-        </label>
-        <label>
-          Preço <input class="input" placeholder="Preço do produto.." id="preco">
-        </label>
-        <label>
-          Quantidade <input class="input" placeholder="Quantidade da compra do produto.." id="quantidade">
-        </label>
-        <label>
-          Fornecedor <input class="input" placeholder="Fornecedor que lhe vendeu o produto.." id="fornecedor">
-        </label>
-          <label>
-            <input type="submit" value="Enviar Dados" class="m">
-          </label>
-        </form>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Produto</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<input type="checkbox" id="check">
+<label id="icone" for="check"><img src="icone.png"></label>
+<div class="bg"></div>
+<div class="barra">
+  <nav class="nav">
+    <a href="index.html">
+      <div class="link">Home Page</div>
+    </a>
+    <a href="fornecedor.html">
+      <div class="link">Fornecedor</div>
+    </a>
+    <a href="historico.html">
+      <div class="link">Historico</div>
+    </a>
+    <a href="#cadastro">
+      <div class="link">Cadastro <span>+</span></div>
+    </a>
+    <a href="estoque.html">
+      <div class="link">Estoque</div>
+    </a>
+  </nav>
+  <nav class="nav" id="cadastro">
+    <ul>
+      <li><a href="cadastroCliente.html">Cliente</a></li>
+      <li><a href="cadastroFornecedor.html">Fornecedor</a></li>
+      <li><a href="cadastroProduto.html">Produto</a></li>
+    </ul>
+  </nav>
+</div>
+<h3>Cadastro Produto</h3>
+<div class="app">
+  <div class="container">
+    <form onsubmit="return enviarDados3();">
+      <label>
+        Codigo do produto <input class="input" placeholder="Codigo do produto.." id="codigoProduto">
+      </label>
+      <label>
+        Nome do Produto <input class="input" placeholder="Nome do produto.." id="nomeProduto">
+      </label>
+      <label>
+        Preço <input class="input" placeholder="Preço do produto.." id="preco">
+      </label>
+      <label>
+        Quantidade <input class="input" placeholder="Quantidade da compra do produto.." id="quantidade">
+      </label>
+      <label>
+        Fornecedor <input class="input" placeholder="Fornecedor que lhe vendeu o produto.." id="fornecedor">
+      </label>
+      <label>
+        <input type="submit" value="Enviar Dados" class="m">
+      </label>
+    </form>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
 </html>
