@@ -39,21 +39,23 @@
     <h3>Cadastro Produto</h3>
     <div class="app">
       <div class="container">
+        <form onsubmit="return enviarDados2();">
         <label>
-          Codigo do produto <input class="input" placeholder="Codigo do produto..">
+          Codigo do produto <input class="input" placeholder="Codigo do produto.." id="codigoProduto">
         </label>
         <label>
-          Nome do Produto <input class="input" placeholder="Nome do produto..">
+          Nome do Produto <input class="input" placeholder="Nome do produto.." id="nomeProduto">
         </label>
         <label>
-          Preço <input class="input" placeholder="Preço do produto..">
+          Preço <input class="input" placeholder="Preço do produto.." id="preco">
         </label>
         <label>
-          Quantidade <input class="input" placeholder="Quantidade da compra do produto..">
+          Quantidade <input class="input" placeholder="Quantidade da compra do produto.." id="quantidade">
         </label>
         <label>
-          Fornecedor <input class="input" placeholder="Fornecedor que lhe vendeu o produto..">
+          Fornecedor <input class="input" placeholder="Fornecedor que lhe vendeu o produto.." id="fornecedor">
         </label>
+        </form>
       </div>
     </div>
   </body>
