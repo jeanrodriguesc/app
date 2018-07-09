@@ -210,9 +210,11 @@ ul {
 }
 
 .m {
-  width: 25%;
-  padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
   margin: 20px 0;
+  height: 100%;
 }
 
 // Fim da barra---------------------------------------------------------------------------------------------------------------------------
