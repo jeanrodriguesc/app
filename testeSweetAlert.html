@@ -6,14 +6,30 @@
 </head>
 <body>
 <form>
-  <input type="text" id="name" placeholder="Name" class="form-control"><br>
-  <input type="text" id="email" placeholder="Email" class="form-control"><br>
-  <input type="text" id="phone" placeholder="Phone" class="form-control"><br>
-  <button type="button" id=" submit" class="btn btn-primary">Submit</button>
+  <input type="text" id="nome" placeholder="Nome"><br>
+  <input type="text" id="email" placeholder="Email"><br>
+  <input type="text" id="telefone" placeholder="telefone"><br>
+  <button type="button" id=" submit" >Submit</button>
 </form>
 
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="testeSweetAlert.js"></script>
+<script >
+  $("#submit").click(function () {
+    var nome = $('#nome').value;
+    var email = $('#email').value;
+    var telefone = $('#telefone').value;
+
+    if (nome == '' || email == '' || telefone == '') {
+
+      swal({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success",
+        button: "Aww yiss!",
+      });
+    }
+  })
+</script>
 </body>
 </html>
