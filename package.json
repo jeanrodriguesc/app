@@ -27,7 +27,6 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "sweetalert": "^2.1.0"
+    "express": "^4.16.3"
   }
 }
