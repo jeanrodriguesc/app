@@ -5,31 +5,17 @@
   <title>teste</title>
 </head>
 <body>
-<form>
-  <input type="text" id="nome" placeholder="Nome"><br>
-  <input type="text" id="email" placeholder="Email"><br>
-  <input type="text" id="telefone" placeholder="telefone"><br>
-  <button type="button" id=" submit" >Submit</button>
+<form onsubmit="return submit();">
+  <label>
+    Codigo do produto <input placeholder="Codigo do produto.." id="codigoProduto">
+  </label>
+  <label>
+  <input type="submit" value="Enviar Dados">
+  </label>
 </form>
 
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script >
-  $("#submit").click(function () {
-    var nome = $('#nome').value;
-    var email = $('#email').value;
-    var telefone = $('#telefone').value;
-
-    if (nome == '' || email == '' || telefone == '') {
-
-      swal({
-        title: "Good job!",
-        text: "You clicked the button!",
-        icon: "success",
-        button: "Aww yiss!",
-      });
-    }
-  })
-</script>
+<script src="testeSweetAlert.js"></script>
 </body>
 </html>

@@ -1,10 +1,12 @@
-$("#submit").click(function () {
-  var name = $('#name').val();
-  var email = $('#email').val();
-  var phone = $('#phone').val();
+function submit() {
+  var codigoProduto = document.getElementById("codigoProduto").value;
 
-  if (name == '' || email == '' || phone == '') {
 
-    alert('OI');
-  }
-})
+  if (codigoProduto.length == 0)
+    swal({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+    });
+
+}
