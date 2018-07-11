@@ -103,6 +103,10 @@ body {
   position: absolute;
   transition: all .2s linear;
   left: -250px;
+
+  @media (max-width: 768px) {
+    width: 165px;
+  }
 }
 
 .nav {
@@ -172,9 +176,6 @@ body {
 h3 {
   display: flex;
   justify-content: center;
-}
-
-.menu {
 }
 
 #cadastro {
