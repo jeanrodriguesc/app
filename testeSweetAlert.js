@@ -1,4 +1,4 @@
-function submit() {
+function sweetAlert() {
   var codigoProduto = document.getElementById("codigoProduto").value;
 
 
