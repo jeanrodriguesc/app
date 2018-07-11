@@ -8,5 +8,4 @@ function sweetAlert() {
       text: "You clicked the button!",
       icon: "success",
     });
-
 }
