@@ -7,8 +7,8 @@ function testando() {
   var fornecedor = document.getElementById("fornecedor").value;
 
 
-  if (codigoProduto.length < 0 || codigoProduto.length > 30)
-    alert('Codigo invalido');
+  if (codigoProduto.length < 3 || codigoProduto.length > 30)
+    swal("Good job!", "You clicked the button!", "success");
   else {
     if (nomeProduto.length < 0 || nomeProduto.length > 50)
       alert('Nome do produto invalido');
@@ -25,7 +25,7 @@ function testando() {
             if (fornecedor.length < 0)
               alert('Sem Fornecedor');
             else
-              swal('Cadastro realizado com sucesso', codigoProduto + '\nNome do Produto: ' + nomeProduto + '\nPreço de compra: ' + precoCompra + '\nPreço de Venda: ' + precoVenda + '\nQuantidade: ' + quantidade + '\nFornecedor: ' + fornecedor);
+              swal("Cadastro realizado com sucesso", '\nCodigo do Produto: ' + codigoProduto + '\nNome do Produto: ' + nomeProduto + '\nPreço de compra: ' + precoCompra + '\nPreço de Venda: ' + precoVenda + '\nQuantidade: ' + quantidade + '\nFornecedor: ' + fornecedor, "success");
           }
         }
       }
