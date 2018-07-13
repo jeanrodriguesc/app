@@ -147,9 +147,31 @@ function enviarDados2() {
   var endereco = document.getElementById("endereco").value;
   var observacao = document.getElementById("observacao").value;
 
-  swal("Cadastro realizado com sucesso", '\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao, "success");
+  if (nome.length < 3 || nome.length > 30)
+    alert('Tamanho do nome invalido');
+  else {
+    if (email.length < 0 || email.length > 50)
+      alert('Email invalido');
+    else {
+      if (telefone <= 0)
+        alert('Telefone invalido');
+      else {
+        if (celular <= 0)
+          alert('Celular invalido');
+        else {
+          if (endereco.length < 0)
+            alert('Sem Endereco');
+          else {
+            if (observacao.length < 0)
+              alert('Sem Observaçao');
+            else
+              swal("Cadastro realizado com sucesso", '\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao, "success");
 
-
+          }
+        }
+      }
+    }
+  }
 }
 
 function enviarDados3() {
