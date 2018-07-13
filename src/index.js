@@ -117,7 +117,7 @@ function enviarDados() {
   var celular = document.getElementById("celular").value;
   var anotacoes = document.getElementById("anotacoes").value;
 
-            alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
+  alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
 }
 
 function enviarDados2() {
