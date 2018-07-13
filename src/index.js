@@ -117,26 +117,7 @@ function enviarDados() {
   var celular = document.getElementById("celular").value;
   var anotacoes = document.getElementById("anotacoes").value;
 
-  if (nome.length < 3 || nome.length > 30)
-    alert('Tamanho do nome invalido');
-  else {
-    if (email.length < 0 || email.length > 50)
-      alert('Email invalido');
-    else {
-      if (telefone <= 0)
-        alert('Telefone invalido');
-      else {
-        if (celular <= 0)
-          alert('Celular invalido');
-        else {
-          if (anotacoes.length < 0)
-            alert('Sem anotações');
-          else
             alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nAnotações: ' + anotacoes);
-        }
-      }
-    }
-  }
 }
 
 function enviarDados2() {
@@ -148,22 +129,22 @@ function enviarDados2() {
   var observacao = document.getElementById("observacao").value;
 
   if (nome.length < 3 || nome.length > 30)
-    alert('Tamanho do nome invalido');
+    swal('Erro', 'Nome invalido', 'error');
   else {
     if (email.length < 0 || email.length > 50)
-      alert('Email invalido');
+      swal('Erro', 'Email invalido', 'error');
     else {
       if (telefone <= 0)
-        alert('Telefone invalido');
+        swal('Erro', 'Telefone invalido', 'error');
       else {
         if (celular <= 0)
-          alert('Celular invalido');
+          swal('Erro', 'Celular invalido', 'error');
         else {
           if (endereco.length < 0)
-            alert('Sem Endereco');
+            swal('Erro', 'Sem Endereco', 'error');
           else {
             if (observacao.length < 0)
-              alert('Sem Observaçao');
+              swal('Erro', 'Sem Observaçao', 'error');
             else
               swal("Cadastro realizado com sucesso", '\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao, "success");
 
@@ -201,7 +182,7 @@ function enviarDados3() {
             if (fornecedor.length = 0)
               swal('Erro', 'Fornecedor desconhecido', 'error');
             else
-              swal("Cadastro realizado com sucesso", '\nCodigo do Produto: ' + codigoProduto + '\nNome do Produto: ' + nomeProduto + '\nPreço de compra: ' + precoCompra + '\nPreço de Venda: ' + precoVenda + '\nQuantidade: ' + quantidade + '\nFornecedor: ' + fornecedor, "success");
+              swal('Cadastro realizado com sucesso', '\nCodigo do Produto: ' + codigoProduto + '\nNome do Produto: ' + nomeProduto + '\nPreço de compra: ' + precoCompra + '\nPreço de Venda: ' + precoVenda + '\nQuantidade: ' + quantidade + '\nFornecedor: ' + fornecedor, "success");
           }
         }
       }
