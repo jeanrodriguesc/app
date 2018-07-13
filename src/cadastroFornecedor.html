@@ -39,12 +39,12 @@
 <h3>Cadastro Fornecedor</h3>
 <div class="app">
   <div class="container">
-    <form onsubmit="return enviarDados2();">
+    <form onsubmit="">
       <label>
         Nome <input class="input" placeholder="Nome.." id="nome">
       </label>
       <label>
-        Email <input class="input" placeholder="Email.." id="email">
+        Email <input class="input" placeholder="Email.." id="email" >
       </label>
       <label>
         Telefone <input class="input" placeholder="Telefone.." id="telefone">
@@ -59,11 +59,12 @@
         Observações <input class="input" placeholder="Observações.." id="observacao">
       </label>
       <label>
-        <input type="submit" value="Enviar Dados" class="m">
+        <button type="button" onclick="enviarDados2()" class="m">Confirmar</button>
       </label>
     </form>
   </div>
 </div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

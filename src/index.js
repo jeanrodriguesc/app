@@ -165,7 +165,7 @@ function enviarDados2() {
             if (observacao.length < 0)
               alert('Sem Observaçao');
             else
-              alert('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao);
+              swal('Cadastro realizado com sucesso\nNome: ' + nome + '\nEmail: ' + email + '\nTelefone: ' + telefone + '\nCelular: ' + celular + '\nEndereço: ' + endereco + '\nObservação: ' + observacao);
 
           }
         }
