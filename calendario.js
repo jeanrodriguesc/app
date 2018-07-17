@@ -4,6 +4,13 @@ function Relogio() {
   var minutos = novaHora.getMinutes();
   var segundos = novaHora.getSeconds();
 
+  if (horas<10)
+    horas = "0" + horas;
+  if (minutos<10)
+    minutos = "0" + minutos;
+  if (segundos<10)
+    segundos = "0" + segundos;
+
   hora_actual = horas + ':' + minutos + ':' + segundos;
   document.form_calendario.relogio.value = hora_actual;
   setTimeout("Relogio()", 1000);
