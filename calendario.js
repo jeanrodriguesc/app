@@ -7,7 +7,9 @@ function Relogio() {
   hora_actual = horas + ':' + minutos + ':' + segundos;
   document.form_calendario.relogio.value = hora_actual;
   setTimeout("Relogio", 1000);
-}
+
+ Calendario();
+
 
 function Calendario() {
   var data = new Date();
@@ -21,7 +23,7 @@ function Calendario() {
 
   data.setDate(1);
 
-  calendario =  '<center><table><tr><th>' + A_mes[mes] + 'de' + ano + '</th></tr>'
+  calendario =  '<table><tr><th>' + A_mes[mes] + 'de' + ano + '</th></tr>'
 
   calendario += '<tr>';
   for (var i=0; i<7; i++) {
@@ -51,7 +53,7 @@ function Calendario() {
     }
     data.setDate(data.getDate()+1);
   }
-  calendario += '<tr><td colspan="7"><form name="form_calendaro"><input type="text" name="relogio" size="10" class="relogio" /></form></td></tr></table></center>';
+  calendario += '<tr><td colspan="7"><form name="form_calendaro"><input type="text" name="relogio" size="10" class="relogio" /></form></td></tr></table>';
 
   document.write(calendario);
 }
