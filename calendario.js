@@ -6,7 +6,7 @@ function Relogio() {
 
   hora_actual = horas + ':' + minutos + ':' + segundos;
   document.form_calendario.relogio.value = hora_actual;
-  setTimeout("Relogio", 1000);
+  setTimeout("Relogio()", 1000);
 
 }
 
@@ -17,12 +17,12 @@ function Calendario() {
   var dia = data.getDate();
   var dia_Semana = data.getDay();
 
-  var A_mes = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+  var A_mes = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
   var A_diaSem = new Array('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab');
 
   data.setDate(1);
 
-  calendario = '<center><table><tr><th colspan="7">' + A_mes[mes] + 'de' + ano + '</th></tr>'
+  calendario = '<center><table><tr><th colspan="7">' + A_mes[mes] + ' de ' + ano + '</th></tr>';
 
   calendario += '<tr>';
   for (var i = 0; i < 7; i++) {
