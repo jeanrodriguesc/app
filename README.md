@@ -7,3 +7,7 @@ olá, app no qual estou trabalhando quero que seja para estoque. Com o intuito d
 -node server.js
 
 -npm run gulp watch
+
+-- Navegador
+
+-http://localhost:3000/
