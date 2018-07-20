@@ -8,6 +8,6 @@ olá, app no qual estou trabalhando quero que seja para estoque. Com o intuito d
 
 -npm run gulp watch
 
--- Navegador
+# Navegador
 
 -http://localhost:3000/
