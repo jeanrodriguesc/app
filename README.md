@@ -4,9 +4,12 @@ olá, app no qual estou trabalhando quero que seja para estoque. Com o intuito d
 ``` $
 git clone @github.com:jeanrodriguesc/app.git
 ```
--node server.js
-
--npm run gulp watch
+``` $
+node server.js
+```
+``` $
+npm run gulp watch
+``` 
 
 # Navegador
 
