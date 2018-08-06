@@ -17,7 +17,9 @@ app.get('/produtos', function (request, response) {
     'Suco',
     'bolacha',
     'pão',
-    'queijo'
+    'queijo',
+    'Tomate',
+    'tempero'
   ])
 });
 
