@@ -20,9 +20,6 @@ for (var i = 0; i <dados.length; i++) {
   tbody.innerHTML += tr;
 }
 
-var tr = tbody.childNodes;
-
-
 document.getElementsById("txtBusca").addEventListener("keyup", function () {
   var busca = document.getElementsById("txtBusca").value.toLowerCase();
 
@@ -43,6 +40,5 @@ if (achou) {
 } else {
      tr.style.display = "none"
 }
-
   }
 });
