@@ -17,4 +17,6 @@ npm run gulp watch
 
 # Visite-me 
 
+Ainda estamos no começo, porém já da pra visualizar e acompanhar o andamento do projeto.
+
 -https://jeanr-app.herokuapp.com
