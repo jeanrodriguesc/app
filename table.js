@@ -9,7 +9,7 @@ var dados = [
   ["Adriano Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"]
 ];
 
-var tbody = document.getElementsByid("tbody");
+var tbody = document.getElementById("tbody");
 for (var i = 0; i <dados.length; i++) {
   var tr = "<tr>" +
   "<td>" + dados [i][0] + "</td>" +
@@ -20,8 +20,8 @@ for (var i = 0; i <dados.length; i++) {
   tbody.innerHTML += tr;
 }
 
-document.getElementsById("txtBusca").addEventListener("keyup", function () {
-  var busca = document.getElementsById("txtBusca").value.toLowerCase();
+document.getElementById("txtBusca").addEventListener("keyup", function () {
+  var busca = document.getElementById("txtBusca").value.toLowerCase();
 
   for  (var i = 0; i < tbody.childNodes.length; i++) {
    var achou = false;
