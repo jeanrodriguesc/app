@@ -14,3 +14,7 @@ npm run gulp watch
 # Navegador
 
 -http://localhost:3000/
+
+# Visite-me 
+
+-https://jeanr-app.herokuapp.com/
