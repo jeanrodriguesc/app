@@ -21,7 +21,9 @@ for (var i = 0; i < dados.length; i++) {
   tbody.innerHTML += tr;
 }
 
-document.getElementById("txtBusca").addEventListener("keyup", function () {
+document.getElementById("txtBusca").addEventListener("keyup", filtro);
+
+function filtro() {
 
   var busca = document.getElementById("txtBusca").value.toLowerCase();
 
@@ -43,4 +45,4 @@ document.getElementById("txtBusca").addEventListener("keyup", function () {
       tr.style.display = "none"
     }
   }
-});
+}
