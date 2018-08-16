@@ -2,7 +2,7 @@ Olá, app no qual estou trabalhando quero que seja para estoque. Com o intuito d
 
 # Terminal
 ``` $
-git clone @github.com:jeanrodriguesc/app.git
+git clone git@github.com:jeanrodriguesc/app.git
 ```
 ``` $
 node server.js
