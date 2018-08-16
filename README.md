@@ -5,6 +5,9 @@ Olá, app no qual estou trabalhando quero que seja para estoque. Com o intuito d
 git clone git@github.com:jeanrodriguesc/app.git
 ```
 ``` $
+pip install express
+```
+``` $
 node server.js
 ```
 ``` $
