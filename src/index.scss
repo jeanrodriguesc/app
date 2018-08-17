@@ -318,6 +318,14 @@ ul {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-left: 55%;
+}
+
+.centro {
+  display: table-cell;
+  margin-top: 35%;
+  margin-left: 55%;
+
 }
 
 table, th, td {
@@ -352,6 +360,7 @@ td {
   max-width: 800px;
   width: 100%;
 }
+
 .inputi {
   padding: 10px;
   margin-top: 10px;
