@@ -33,39 +33,6 @@ function loadProductList() {
   })
 }
 
-var listaProvider = [
-  'João',
-  'Lucas',
-  'Thiago',
-  'Matheus',
-  'Paulo',
-  'Judas',
-  'Pedro',
-  'Jesus'
-];
-
-function loadProviderName() {
-  var lista = document.querySelector('.lista');
-  listaProvider.forEach(function (n) {
-    var item = document.createElement('li');
-    item.innerText = n;
-    lista.appendChild(item)
-  })
-}
-
-function buscarProvider(e) {
-  var search = e.value.toLowerCase();
-  var lista = document.querySelector('.lista');
-  lista.innerHTML = '';
-  listaProvider.forEach(function (n) {
-    if (n.toLowerCase().startsWith(search)) {
-      var item = document.createElement('li');
-      item.innerText = n;
-      lista.appendChild(item)
-    }
-  })
-}
-
 var historic = [
   'Arroz',
   'Feijao',
