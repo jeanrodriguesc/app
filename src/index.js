@@ -161,11 +161,11 @@ var tbody = document.getElementById("tbody");
 
 var dados = [
   ["Jean Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["Lívia Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
-  ["Thiago Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["John Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
-  ["Jade Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["Jonas Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
+  ["Lívia Rodrigues", "liviarodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
+  ["Thiago Rodrigues", "thiagorodrigues@gmail.com", "85-98365-5259", "Ativo"],
+  ["John Rodrigues", "johnrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
+  ["James Rodrigues", "jamesrodrigues@gmail.com", "85-98365-5259", "Ativo"],
+  ["Jonas Rodrigues", "jonasrodrigues@gmail.com", "85-98365-5259", "Ativo"],
 ];
 
 for (var i = 0; i < dados.length; i++) {
