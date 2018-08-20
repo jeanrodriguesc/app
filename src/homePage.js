@@ -1,12 +1,11 @@
 var tbody = document.getElementById("tbody");
 
 var dados = [
-  ["Jean Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["Lívia Rodrigues", "liviarodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
-  ["Thiago Rodrigues", "thiagorodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["John Rodrigues", "johnrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
-  ["James Rodrigues", "jamesrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["Jonas Rodrigues", "jonasrodrigues@gmail.com", "85-98365-5259", "Ativo"],
+  ["FXGH-0001", "15", "Bolsa", "10,00"],
+  ["FXGH-0002", "25", "Peso de porta", "5,00"],
+  ["FXGH-0003", "6", "Porta absorvente", "6,50"],
+  ["FXGH-0004", "3", "Carteira masculina", "5,00"],
+  ["FXGH-0005", "4", "Porta celular", "7,00"],
 ];
 
 for (var i = 0; i < dados.length; i++) {
