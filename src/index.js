@@ -166,8 +166,6 @@ var dados = [
   ["John Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
   ["Jade Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
   ["Jonas Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"],
-  ["Joel Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Bloqueado"],
-  ["Adriano Rodrigues", "jeanrodrigues@gmail.com", "85-98365-5259", "Ativo"]
 ];
 
 for (var i = 0; i < dados.length; i++) {
