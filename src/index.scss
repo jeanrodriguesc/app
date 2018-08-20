@@ -318,18 +318,21 @@ ul {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-left: 55%;
+}
+
+.aj {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .centro {
-  display: table-cell;
   margin-top: 35%;
-  margin-left: 55%;
-
 }
 
 table, th, td {
   border: 1px solid black;
+
 }
 
 tr:nth-child(even) {
@@ -363,7 +366,6 @@ td {
 
 .inputi {
   padding: 10px;
-  margin-top: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
   outline-color: #4caf50;
