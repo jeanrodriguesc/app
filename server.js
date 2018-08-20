@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static('final'));
 
-app.get('/produtos', function (request, response) {
+/* app.get('/produtos', function (request, response) {
   response.send([
     'Arroz',
     'Feijão',
@@ -21,7 +21,7 @@ app.get('/produtos', function (request, response) {
     'Tomate',
     'tempero'
   ])
-});
+}); */
 
 app.listen(port, function () {
   console.log('Started on port ' + port)
