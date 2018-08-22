@@ -360,12 +360,13 @@ td {
 }
 
 .maxWidth {
-
+  max-width: 60%;
+  width: 60%;
 
 
   @media (max-width: 768px) {
-    max-width: 100%;
-    width: 100%;
+    max-width: 30%;
+    width: 30%;
 
     display: flex;
     justify-content: center;
