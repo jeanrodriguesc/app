@@ -364,14 +364,13 @@ td {
 
 
   @media (max-width: 768px) {
-    max-width: 30%;
-    width: 30%;
+    max-width: 100%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top: 40%;
-
+    flex-direction: column;
+    margin-top: 25%;
   }
 }
 
