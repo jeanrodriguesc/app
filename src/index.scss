@@ -362,13 +362,10 @@ td {
 .maxWidth {
   max-width: 60%;
   width: 60%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
 
 .inputi {
   padding: 10px;
